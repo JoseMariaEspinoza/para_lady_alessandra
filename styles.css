@@ -129,7 +129,7 @@ body::before{
 .detalles p{margin:.5rem 0}
 .detalles em{display:block;color:var(--oro);font-size:1.1em;font-style:normal}
 .detalles strong{
-  display:block;font-family:var(--display);font-weight:600;
+  display:block;font-weight:600;
   font-size:clamp(1.1rem,1rem + .6vw,1.4rem);line-height:1.5;color:var(--burdeos);
 }
 .detalles span{display:block}
