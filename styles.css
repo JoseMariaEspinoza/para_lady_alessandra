@@ -127,12 +127,12 @@ body::before{
 
 .detalles{margin:1.6rem 0;padding:1.1rem 0;border-block:1px solid var(--oro-2)}
 .detalles p{margin:.5rem 0}
-.detalles em{display:block;color:var(--oro);font-family:var(--script); /* Asegura la fuente manuscrita */
-  font-size:1.4em;font-style:normal;}
-.detalles strong{display:block;font-family:var(--script); /* Aplica la fuente manuscrita */font-weight:400;
-  font-size:clamp(2rem, 1.6rem + 1vw, 2.6rem); /* Tamaño mayor adecuado para la cursiva */line-height:1.2;color:var(--burdeos);}
-.detalles span{display:block;font-family:var(--script);font-size:1.2em;color:var(--tinta);
+.detalles em{display:block;color:var(--oro);font-size:1.1em;font-style:normal}
+.detalles strong{
+  display:block;font-family:var(--display);font-weight:600;
+  font-size:clamp(1.1rem,1rem + .6vw,1.4rem);line-height:1.5;color:var(--burdeos);
 }
+.detalles span{display:block}
 
 .carta .despedida{margin:1.8rem 0 0}
 .firma{font-size:clamp(2.4rem,10vw,3.6rem);margin:.2rem 0 0}
