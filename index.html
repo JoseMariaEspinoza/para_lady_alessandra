@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Una invitación para Lady Alessandra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Italianno&family=Playfair+Display:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       INSERTA AQUÍ LA RUTA DE TU ARCHIVO DE AUDIO
+       Ejemplo: src="musica/vals-bridgerton.mp3"
+       La música empieza sola cuando se pulsa el sobre (ver script.js).
+       ============================================================ -->
+  <audio id="musica" src="" loop preload="auto"></audio>
+
+  <!-- EL SOBRE -->
+  <div class="escena" id="escena">
+    <div class="sobre" id="sobre" role="button" tabindex="0" aria-label="Abrir la invitación">
+      <div class="capa dorso"></div>
+      <div class="capa papel"><span>Para Lady Alessandra</span></div>
+      <div class="capa frente"></div>
+
+      <!-- La solapa y el sello forman una sola pieza: el sello (con el escudo de la casa)
+           va pegado a la solapa y se levanta con ella, sin romperse. -->
+      <div class="tapa">
+        <div class="solapa"></div>
+        <div class="sello" aria-hidden="true">
+          <img src="sello.png" alt="" draggable="false">
+        </div>
+      </div>
+
+      <p class="pista">Toca el sello para abrir</p>
+    </div>
+  </div>
+
+  <!-- LA CARTA -->
+  <article class="carta" id="carta" hidden>
+    <p class="saludo">Mi querida</p>
+    <h1 class="nombre">Lady Alessandra</h1>
+    <p class="casa">de la Casa Falcón Torero</p>
+
+    <div class="adorno">❦</div>
+
+    <p>En medio de todo el bullicio de la temporada, mi único y verdadero deseo es compartir una velada a solas con vos.
+    </p>
+    <p>Confieso que, entre bailes, murmullos y salones abarrotados, mi pensamiento ha vuelto una y otra vez a vuestra
+      sonrisa.</p>
+    <p>Por ello, solicito el inmenso honor de su compañía para una cena íntima.</p>
+
+    <div class="detalles">
+      <p><em>Lugar</em><strong>El Cacique</strong><span>C. del Padre Damián, 47</span></p>
+      <p><em>Fecha</em><strong>Martes 20, a las 20:00h</strong></p>
+    </div>
+
+    <p>Prometo buena mesa, mejor conversación y una noche en la que el tiempo, por una vez, sabrá esperar.</p>
+    <p>Sería la mayor de mis dichas que aceptarais esta humilde invitación.</p>
+    <p>Aguardo vuestra respuesta con la impaciencia de quien no sabe disimularla.</p>
+
+    <p class="despedida">Sinceramente, vuestro,</p>
+    <p class="nombre firma">Lord José María Espinoza Monroy</p>
+
+    <!-- ============================================================
+         EDITA AQUÍ LOS PLATOS REALES DEL MENÚ
+         Cambia el texto de cada <p> dentro de .plato
+         ============================================================ -->
+    <section class="menu">
+      <h2>Adelanto del Menú</h2>
+      <div class="plato"><em>Entrante</em>
+        <p>Tartar de salmón, aguacate y lima</p>
+      </div>
+      <div class="plato"><em>Principal</em>
+        <p>Solomillo al vino tinto con puré de trufa</p>
+      </div>
+      <div class="plato"><em>Postre</em>
+        <p>Fresas con nata y crema de vainilla</p>
+      </div>
+    </section>
+
+    <!-- Sustituye TU_NUMERO_AQUI por el número con prefijo de país, sin + ni espacios (ej. 34600111222) -->
+    <a class="btn" target="_blank" rel="noopener"
+      href="https://wa.me/34641567128?text=%C2%A1Lord%20Jos%C3%A9%20Mar%C3%ADa,%20acepto%20encantada%20su%20invitaci%C3%B3n%20a%20cenar!">Aceptar
+      la Invitación</a>
+  </article>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
